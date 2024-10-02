@@ -125,15 +125,15 @@ def check_game_for_recommendation(game_name:str,user_id:int=32):
 
 with st.sidebar:
 
-    selected = option_menu('Games Recommendation System',
+    selected = option_menu('Games Recommendation App',
 
-                           ['Games Recommendation For User Prediction',
+                           ['Games Recommendation For User',
                             'Game To User Recommendation Prediction'],
                            icons=['person','controller'],
                            default_index=0)
 
-if (selected == 'Games Recommendation For User Prediction'):
-    st.title("Games Recommendation For User Prediction")
+if (selected == 'Games Recommendation For User'):
+    st.title("Games Recommendation For User")
 
     user_id=st.number_input("User Id", min_value=0, max_value=666535, value=50)
 
