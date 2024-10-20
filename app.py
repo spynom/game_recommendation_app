@@ -128,7 +128,7 @@ with st.sidebar:
     selected = option_menu('Games Recommendation App',
 
                            ['Games Recommendation For User',
-                            'Game To User Recommendation Prediction'],
+                            'Whether the game be recommended'],
                            icons=['person','controller'],
                            default_index=0)
 
@@ -158,6 +158,6 @@ if (selected == 'Game To User Recommendation Prediction'):
         if check_game_for_recommendation(game_name,user_id):
             st.success("Recommend!")
         else:
-            st.warning("Don't Recommend!")
+            st.warning("Not Recommended!")
 
 
